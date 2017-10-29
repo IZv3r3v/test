@@ -234,23 +234,10 @@
 }
 
 .ja-job-list .job .meta {
-	height: 25px;
+	min-height: 25px;
 	color: #779f2f;
 	margin-bottom: 1em;
-}
-
-.ja-job-list .job .meta:before,
-.ja-job-list .job .meta:after {
-	content: "";
-	display: table;
-}
-
-.ja-job-list .job .meta:after {
-	clear: both;
-}
-
-.ja-job-list .job .meta {
-	zoom: 1;
+	position: relative;
 }
 
 .ja-job-list .job .meta p {
@@ -260,22 +247,22 @@
 
 .ja-job-list .job .meta .classifications {
 	padding-left: 0px;
-	float: left;
 	font-size: 16px;
 	list-style: none;
-	width: 80%;
 	margin: 0 0 0.5em 0;
 }
 
 .ja-job-list .job .meta .classifications li {
-	display: inline;
+	display: inline-block;
 	margin-right: 0.5em;
 }
 
 .ja-job-list .job .meta .date-posted {
-	margin: 0 0 0.5em 0;
-	float: right;
+	margin: 0;
 	text-align: right;
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 
 .ja-job-list .job .meta .salary {
