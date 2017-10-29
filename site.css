@@ -467,9 +467,11 @@
 	}
 	.ja-job-details .apply .back-link {
 		order: 2;
+		margin: 0;
 	}
 	.ja-job-details .apply .ja-button {
 		order: 1;
+		margin-bottom: 20px;
 	}
 }
 
