@@ -459,6 +459,20 @@
 	text-align: center;
 }
 
+@media (max-width: 500px) {
+	.ja-job-details .apply {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.ja-job-details .apply .back-link {
+		order: 2;
+	}
+	.ja-job-details .apply .ja-button {
+		order: 1;
+	}
+}
+
 .ja-job-details .apply .back-link {
 	font-size: 0.9em;
 	margin-right: 1em;
