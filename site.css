@@ -403,23 +403,11 @@
 }
 
 .ja-job-details .meta {
-	height: 25px;
+	min-height: 25px;
     color: #779f2f;
 	margin-bottom: 1em;
-}
-
-.ja-job-details .meta:before,
-.ja-job-details .meta:after {
-	content: "";
-	display: table;
-}
-
-.ja-job-details .meta:after {
-	clear: both;
-}
-
-.ja-job-details .meta {
-	zoom: 1;
+	padding-right: 120px;
+	position: relative;
 }
 
 .ja-job-details .meta p {
@@ -428,8 +416,6 @@
 }
 
 .ja-job-details .meta .classifications {
-	float: left;
-	width: 80%;
 	padding-left: 0px;
 	font-size: 16px;
 	list-style: none;
@@ -437,15 +423,16 @@
 }
 
 .ja-job-details .meta .classifications li {
-	display: inline;
+	display: inline-block;
 	margin-right: 0.5em;
 }
 
 .ja-job-details .meta .date-posted {
-	clear: right;
-	float: right;
 	text-align: right;
-	margin: 0 0 0.5em 0;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 
 .ja-job-details .meta .salary {
